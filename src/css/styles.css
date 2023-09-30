@@ -1,5 +1,6 @@
 body{
     background-color: #000000;
+    overflow: hidden;
 }
 
 main::after{
@@ -76,4 +77,21 @@ main .personagem .imagem{
     align-items: center;
     gap: 10px;
     background-color: rgba(0, 0, 0, 0.3);
+}
+
+.botoes .botao{
+    border: none;
+    background: none;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.botoes .botao img{
+    border-radius: 50%;
+    max-width: 70px;
+}
+
+.botoes .botao.selecionado{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #D9D9D9;
 }
