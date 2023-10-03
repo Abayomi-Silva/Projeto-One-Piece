@@ -1,3 +1,5 @@
+"use strict"
+
 const botoes = document.querySelectorAll(".botao");
 const personagens = document.querySelectorAll(".personagem");
 
@@ -11,8 +13,6 @@ botoes.forEach((botao, indice) => {
         personagens[indice].classList.add("selecionado");
     });
 })
-
-
 
 function desselecionarPersonagens() {
     const personagemSelecionado = document.querySelector(".personagem.selecionado");
